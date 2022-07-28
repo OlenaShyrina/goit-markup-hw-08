@@ -1,0 +1,27 @@
+.footer__socials {
+    margin-left: 70px;
+  }
+  
+  .footer__call {
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--basic-white);
+  }
+  
+  .social__link--white {
+    color: var(--basic-white);
+    background-color: rgba(255, 255, 255, 0.1);
+  
+    transition: background-color 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+  
+
+  

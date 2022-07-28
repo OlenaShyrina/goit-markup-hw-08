@@ -1,0 +1,39 @@
+.comment {
+    margin-bottom: 20px;
+  
+  }
+  
+  .comment__text {
+    height: 120px;
+    padding: 11px 15px;
+  
+    outline: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  
+    resize: none;
+  
+    transition: outline 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+      outline: 1px solid var(--accent-color);
+      cursor: pointer;
+    }
+  }
+  
+  .comment_label {
+    
+    &::placeholder {
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+    
+      color: rgba(117, 117, 117, 0.5);
+    
+    }
+  }
+  
+  
+
+  
+  

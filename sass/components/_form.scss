@@ -1,0 +1,64 @@
+.form {
+
+    margin-bottom: 20px;
+  
+  }
+  
+  .modal-form__title {
+  
+    margin-bottom: 12px;
+  
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+  
+    color: var(--primary-text-color);
+  }
+  
+  .form-field {
+    position: relative;
+  
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .form-field__label {
+    margin-bottom: 4px;
+  
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
+  
+  .form-field__input {
+    margin: 0;
+    padding: 11px 42px;
+  
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+  
+    transition: border 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+      outline: 1px solid var(--accent-color);
+      cursor: pointer;
+    
+    }
+  }
+  
+  .form-field__icon {
+   position: absolute;
+   left: 12px;
+   top: 29px;
+  
+   transition: fill 250ms var(--cubic);
+
+   .form-field__input:hover + &,
+   .form-field__input:focus + & {
+     fill: var(--accent-color);
+   }
+  }

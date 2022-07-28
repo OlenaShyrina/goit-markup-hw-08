@@ -1,0 +1,37 @@
+
+.features-section {
+    padding-bottom: 0;
+  }
+  
+  .features-list {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .features-list__item {
+    width: 270px;
+  }
+  
+  .feature__icon {
+    padding: 25px 100px;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .feature__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--primary-text-color);
+  
+    text-transform: uppercase;
+  }
+  
+  .feature__description {
+    width: 270px;
+    line-height: 1.71;
+  }

@@ -1,0 +1,17 @@
+.logo {
+    font-family: Raleway, bold;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .logo__bit {
+    color: var(--accent-color);
+  }
+  
+  .logo__bit--inverse {
+    color: var(--basic-white);
+  }
+  

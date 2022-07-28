@@ -1,0 +1,40 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    line-height: 1.71;
+    background-color: #2f303a;
+  }
+  
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .footer__logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  .footer__address {
+    font-style: normal;
+    color: var(--basic-white);
+  }
+  
+  .footer-contacts__item {
+    margin-top: 9px;
+  }
+  
+  .footer-contacts__link {
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+  
+    transition: color 250ms var(--cubic);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  
+ 
