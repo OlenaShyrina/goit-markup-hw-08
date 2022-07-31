@@ -1,6 +1,10 @@
 
 .footer__form {
-    margin-left: auto;
+   
+
+    @media screen and (min-width: 1200px) {
+      margin-left: auto;
+    }
   }
   
   .subscr-form__input {
