@@ -1,6 +1,6 @@
 .hero-button {
     min-width: 200px;
-    padding: 10px 32px;
+   
   
   @extend %button;
   
@@ -13,6 +13,16 @@
       background-color: #188ce8;
       cursor: pointer;
     }
+
+    @media screen and (max-width: 1200px)  {
+      padding: 10px 24px;
+    }
+    
+    @media screen and (min-width: 1200px)  {
+      padding: 10px 32px;
+    }
+
+
   }
   
 

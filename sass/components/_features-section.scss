@@ -1,6 +1,7 @@
 
 .features-section {
     padding-bottom: 0;
+
   }
   
   .features-list {
@@ -12,7 +13,6 @@
       margin: -5px;;
     }
     
-
     @media screen and (min-width: 1200px) {
        display: flex;
        gap: 30px;
@@ -21,6 +21,13 @@
   }
   
   .features-list__item {
+
+    &:not(:last-child) {
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 30px;
+      }
+    }
    
     @media screen and (min-width: 768px) {
     width: calc((100% - 2 * 10px) / 2);
@@ -41,10 +48,12 @@
       background-color: #f5f4fa;
       border: none;
       border-radius: 4px;
-      width: 1;
+
+    @media screen and (max-width: 7688px) {
+        width: 100%;
+      }
 
     @media screen and (min-width: 1200px) {
-   
       width: 270px;
     }
   
@@ -57,6 +66,10 @@
     color: var(--primary-text-color);
   
     text-transform: uppercase;
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
   }
   
   .feature__description {
