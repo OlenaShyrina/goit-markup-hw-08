@@ -70,6 +70,11 @@
       color: var(--accent-color);
       cursor: pointer;
     }
+
+    @media screen and (max-width: 768px) {
+      background: transparent;
+      border: none;
+    }
   }
   
   .btn-close__icon {
@@ -107,3 +112,15 @@
     vertical-align: middle;
   }
   
+  .btn-open {
+    display: none;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+      margin-left: auto;
+    background-color: transparent;
+    border: none;
+    }
+  
+  }
+    
