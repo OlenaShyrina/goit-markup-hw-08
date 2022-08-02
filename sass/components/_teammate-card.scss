@@ -1,3 +1,5 @@
+@import '../utils/breakpoints';
+
 .teammate {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
@@ -12,7 +14,7 @@
       width: 100%;
       }
 
-    @media screen and (min-width: 768px) {
+    @include for-tablet-up {
       width: calc((100% - 2 * 10px) / 2);
       margin: 5px;
       }
@@ -25,7 +27,7 @@
     width: 100%;
     height: auto;
 
-    @media screen and (min-width: 1200px) {
+    @include for-desktop-up {
      max-width: 100%;
       }
   }
@@ -42,7 +44,7 @@
       padding-bottom: 24px;
        }
 
-    @media screen and (min-width: 1200px) {
+    @include for-desktop-up {
       width: 270px;
       padding-bottom: 30px;
        }
@@ -57,6 +59,7 @@
     font-size: 16px;
     line-height: 1.19;
     color: var(--color-primary);
+    
   }
   
   .teammate__position {

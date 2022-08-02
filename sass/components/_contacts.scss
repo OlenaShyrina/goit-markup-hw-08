@@ -1,3 +1,5 @@
+@import '../utils/breakpoints';
+
 .contacts-list {
   margin-left: auto;
 
@@ -5,7 +7,7 @@
     display: none;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include for-desktop-up {
     display: flex;
     gap: 50px;
   }

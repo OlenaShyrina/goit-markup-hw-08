@@ -1,3 +1,4 @@
+@import '../utils/breakpoints';
 
 .team-section {
     background-color: var(--color-background-secondary);
@@ -5,13 +6,13 @@
   
   .team-list {
 
-    @media screen and (min-width: 768px) {
+    @include for-tablet-up {
       display: flex;
       flex-wrap: wrap;
       mask-origin: -5px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include for-desktop-up {
        display: flex;
        gap: 30px;
     }

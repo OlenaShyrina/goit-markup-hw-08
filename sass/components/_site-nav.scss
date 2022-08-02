@@ -1,19 +1,17 @@
+@import '../utils/breakpoints';
+
 .main-nav {
   display: flex;
   align-items: center;  
-
-  @media screen and (max-width: 767px) {
-    padding: 10px 10px 10px 15px;
-  }
   }
   
   .menu {
 
-    @media screen and (min-width: 768px) {
+    @include for-tablet-up {
       margin-left: 87px;
       }
 
-    @media screen and (min-width: 1200px) {
+    @include for-desktop-up {
       margin-left: 93px;
       }
     

@@ -1,13 +1,18 @@
+@import '../utils/breakpoints';
+
 .header {
   position: relative;
-    border-bottom: 1px solid #ececec;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
 
 
-    &__desktop-menu {
+  &__desktop-menu {
       display: none;
 
-      @media screen and (min-width: 768px) {
-              display: block;  
+  @include for-tablet-up {
+        display: block;  
+        padding: 0;
       } 
     }
   

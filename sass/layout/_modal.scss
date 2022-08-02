@@ -19,9 +19,9 @@
     position: absolute;
     left: 50%;
     top: 50%;
-  
-    width: 528px;
-  
+
+    width: calc(100vw - 30px);
+
     padding: 40px;
     
     background-color: var(--color-background-primary);
@@ -31,5 +31,9 @@
   
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--cubic);
+
+    @include for-desktop-up {
+      width: 528px;
+    }
   }
   

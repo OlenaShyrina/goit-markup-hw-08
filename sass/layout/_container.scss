@@ -1,13 +1,20 @@
+@import '../utils/breakpoints';
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
   width: 100%;
 
-  @media screen and (min-width: 768px) {
-    width: $tablet;
+@include for-mobile-up {
+  width: 480px;
+}
+
+  @include for-tablet-up {
+    width: 768px;
   }
-  @media screen and (min-width: 1200px) {
-    width: $desktop;
+
+  @include for-desktop-up {
+    width: 1200px;
   }
   }

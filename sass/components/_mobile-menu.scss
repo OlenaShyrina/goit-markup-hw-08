@@ -1,13 +1,19 @@
+@import '../utils/breakpoints';
+
 .header__mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
     position: fixed;
     right: 0;
     top: 0;
+    z-index: 3;
     width: 100vw;
     height: 100vh;
     padding: 48px 40px;
     background-color: var(--color-background-primary);
 
-    @media screen and (min-width: 768px) {
+    @include for-tablet-up {
         display: none;
     }
 }
@@ -27,10 +33,6 @@
 .mobile-menu__link--current {
     color: var(--color-accent);
   } 
-
-.mobile-menu__contacts {
-  margin-top: auto;
-}
 
 .mobile-menu__tel {
   margin-bottom: 32px;
@@ -52,9 +54,8 @@
 }
 
 .mobile-menu__socials {
-  @extend %flex-centered;
+  display: flex;
   gap: 20px;
-  margin-top: auto;
 
 }
 

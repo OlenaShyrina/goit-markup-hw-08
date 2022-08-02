@@ -1,4 +1,7 @@
+@import '../utils/breakpoints';
+
 .footer {
+
     padding-top: 60px;
     padding-bottom: 60px;
     line-height: 1.71;
@@ -7,26 +10,39 @@
   }
   
   .footer-container {
+      // display: flex;
+      // flex-wrap: wrap;
+      // gap: 60px;
+      // justify-content: center;
+      // align-items: center;
 
-    @media screen and (min-width: 480px) {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: center;
-      align-items: center;
-   
+    @include for-mobile-up {
+      gap: 30px;   
     }
 
-    @media screen and (min-width: 1200px) {
+    @include for-desktop-up {
       display: flex;
       align-items: baseline;
     }
    
   }
+
+  .footer__thumb {
+    text-align: center;
+    margin-bottom: 60px;
+
+    @include for-desktop-up {
+      text-align: left;
+      margin-bottom: 0;
+    }
+  }
   
   .footer__logo {
-    display: block;
     margin-bottom: 20px;
+   
+    @include for-desktop-up {
+      display: block;
+    }
   }
   
   .footer__address {
@@ -50,5 +66,24 @@
       color: var(--color-accent);
     }
   }
+
+  .footer__socials {
+    margin-bottom: 60px;
+
+
+    @include for-desktop-up {
+      margin-bottom: 0;
+    }
+  }
   
- 
+ .footer__call {
+  text-align: center;
+
+  @include for-desktop-up {
+    text-align: left;
+  }
+ }
+
+ .subscr-form {
+  text-align: center;
+ }

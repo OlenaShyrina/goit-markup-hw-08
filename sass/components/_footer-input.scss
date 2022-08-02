@@ -1,17 +1,19 @@
+@import '../utils/breakpoints';
 
 .footer__form {
    
 
-    @media screen and (min-width: 1200px) {
+    @include for-desktop-up {
       margin-left: auto;
     }
   }
   
   .subscr-form__input {
-  
+    margin-bottom: 20px;
     padding: 14px 14px;
   
-    width: 358px;
+    width: 100%;
+    
   
     font-size: 16px;
     line-height: 1.25;
@@ -21,4 +23,13 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
+    @include for-tablet-up {
+      width: 358px;
+    }
+
+    @include for-desktop-up {
+      margin-bottom: 0;
+      width: 358px;
+    }
   }

@@ -1,7 +1,9 @@
+@import '../utils/breakpoints';
+
 .section__title {
-   
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
+    
     color: var(--color-primary);
     text-align: center;
 
@@ -9,8 +11,10 @@
       margin-bottom: 30px;
       }
 
-      @media screen and (min-width: 1200px) {
+      @include for-desktop-up {
         margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
         }
       
   }
@@ -19,15 +23,27 @@
     margin: 0 auto;
     margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-  
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     color: var(--color-white);
     text-align: center;
     text-transform: uppercase;
 
-    @media screen and (min-width: 1200px) {
+    @include for-desktop-up {
       width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+  
     }
+
+    
+/* or 162% */
+
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
   }

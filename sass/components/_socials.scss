@@ -1,4 +1,5 @@
- 
+@import '../utils/breakpoints';
+
   .socials {
     @extend %flex-centered;
     gap: 10px;
