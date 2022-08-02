@@ -4,6 +4,11 @@
     list-style: none;
 }
 
+%link {
+    text-decoration: none;
+    color: inherit;
+}
+
 %flex-centered {
     display: flex;
     justify-content: center;
@@ -25,8 +30,8 @@
     letter-spacing: 0.06em;
     text-align: center;
   
-    color: var(--basic-white);
-    background-color: var(--accent-color);
+    color: var(--color-white);
+    background-color: var(--color-accent);
     border-color: transparent;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;

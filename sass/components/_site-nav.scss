@@ -2,12 +2,12 @@
   display: flex;
   align-items: center;  
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     padding: 10px 10px 10px 15px;
   }
   }
   
-  nav {
+  .menu {
 
     @media screen and (min-width: 768px) {
       margin-left: 87px;
@@ -26,7 +26,7 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--primary-text-color);
+    color: var(--color-primary);
 
 
   }
@@ -40,8 +40,7 @@
     padding-top: 32px;
     padding-bottom: 31px;
   
-    text-decoration: none;
-    color: inherit;
+    @extend %link;
   
     transition-property: color;
     transition-duration: 250ms;
@@ -50,11 +49,11 @@
   
   .site-nav__link:hover,
   .site-nav__link:focus {
-    color: var(--accent-color);
+    color: var(--color-accent);
   }
   
   .site-nav__link--current {
-    color: var(--accent-color);
+    color: var(--color-accent);
   }
   
   .site-nav__item--current::after {

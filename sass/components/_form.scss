@@ -14,7 +14,7 @@
     text-align: center;
     letter-spacing: 0.03em;
   
-    color: var(--primary-text-color);
+    color: var(--color-primary);
   }
   
   .form-field {
@@ -44,7 +44,7 @@
 
     &:hover,
     &:focus {
-      outline: 1px solid var(--accent-color);
+      outline: 1px solid var(--color-accent);
       cursor: pointer;
     
     }
@@ -59,6 +59,6 @@
 
    .form-field__input:hover + &,
    .form-field__input:focus + & {
-     fill: var(--accent-color);
+     fill: var(--color-accent);
    }
   }

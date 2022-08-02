@@ -1,5 +1,6 @@
 .hero-button {
     min-width: 200px;
+    padding: 10px 24px;
    
   
   @extend %button;
@@ -14,15 +15,9 @@
       cursor: pointer;
     }
 
-    @media screen and (max-width: 1200px)  {
-      padding: 10px 24px;
-    }
-    
     @media screen and (min-width: 1200px)  {
       padding: 10px 32px;
     }
-
-
   }
   
 
@@ -34,7 +29,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    color: var(--primary-text-color);
+    color: var(--color-primary);
     background-color: #f5f4fa;
     border: none;
     border-radius: 4px;
@@ -44,8 +39,8 @@
 
       &:hover,
       &:focus {
-        background-color: var(--accent-color);
-        color: var(--basic-white);
+        background-color: var(--color-accent);
+        color: var(--color-white);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         cursor: pointer;
       }
@@ -53,8 +48,8 @@
   
   
   .btn-filter--active {
-    background-color: var(--accent-color);
-    color: var(--basic-white);
+    background-color: var(--color-accent);
+    color: var(--color-white);
   }
 
   
@@ -69,7 +64,7 @@
   
     width: 30px;
     height: 30px;
-    background-color: var(--basic-white);
+    background-color: var(--color-white);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
   
@@ -77,15 +72,10 @@
    
     &:hover {
       cursor: pointer;
-      color: var(--accent-color);
+      color: var(--color-accent);
       cursor: pointer;
     }
-
-    @media screen and (max-width: 768px) {
-      background: transparent;
-      border: none;
     }
-  }
   
   .btn-close__icon {
     fill: currentColor;
@@ -123,14 +113,36 @@
   }
   
   .btn-open {
-    display: none;
-
-    @media screen and (max-width: 768px) {
-      display: block;
-      margin-left: auto;
+    margin-left: auto;
+    padding: 0;
     background-color: transparent;
     border: none;
+
+    @media screen and (min-width: 768px) {
+    display: none;
     }
   
   }
     
+  .btn-mobile {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  
+    @extend %flex-centered;
+
+    padding: 0;
+  
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+
+    transition: color 250ms var(--cubic);
+   
+    &:hover {
+      cursor: pointer;
+      color: var(--color-accent);
+      cursor: pointer;
+    }
+    }

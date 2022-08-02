@@ -8,14 +8,13 @@
 @import './components/buttons';
 @import './components/clients';
 @import './components/contacts';
-@import './components/features-section';
 @import './components/filters';
 @import './components/footer-input';
 @import './components/footer-socials';
 @import './components/form';
 @import './components/hero';
 @import './components/logo';
-@import './components/ourteam';
+@import './components/mobile-menu';
 @import './components/site-nav';
 @import './components/socials';
 @import './components/teammate-card';
@@ -26,8 +25,10 @@
 @import './components/checkbox';
 
 @import './layout/container';
+@import './layout/features-section';
 @import './layout/header';
 @import './layout/section';
 @import './layout/footer';
+@import './layout/ourteam';
 @import './layout/modal';
 

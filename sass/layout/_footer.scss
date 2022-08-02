@@ -31,7 +31,7 @@
   
   .footer__address {
     font-style: normal;
-    color: var(--basic-white);
+    color: var(--color-white);
   }
   
   .footer-contacts__item {
@@ -47,7 +47,7 @@
 
     &:hover,
     &:focus {
-      color: var(--accent-color);
+      color: var(--color-accent);
     }
   }
   

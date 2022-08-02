@@ -1,10 +1,11 @@
 :root {
-    //  --color-primary: ;
-    //  --color-accent: ;
+     --color-primary: #212121;
+     --color-accent: #2196f3;
+     --color-white: #ffffff;
     //  --color-warning: ;
 
-    //  --color-background-primary: ;
-    //  --color-background-secondary: ;
+     --color-background-primary: #ffffff;
+     --color-background-secondary: #f5f4fa;
 
     //  --font-family-primary: ;
     //  --font-family-title: ;
@@ -13,10 +14,5 @@
     //  --input-color-background: ;
     //  --input-color-placeholder: ;
 
-
-    --primary-text-color: #212121;
-    --main-background-color: #ffffff;
-    --accent-color: #2196f3;
-    --basic-white: #ffffff;
     --cubic: cubic-bezier(0.4, 0, 0.2, 1);
   }

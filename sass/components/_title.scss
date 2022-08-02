@@ -2,7 +2,7 @@
    
     font-size: 36px;
     line-height: 1.17;
-    color: var(--primary-text-color);
+    color: var(--color-primary);
     text-align: center;
 
     @media screen and (max-width: 768px) {
@@ -23,7 +23,7 @@
     line-height: 1.36;
   
     letter-spacing: 0.06em;
-    color: var(--basic-white);
+    color: var(--color-white);
     text-align: center;
     text-transform: uppercase;
 
