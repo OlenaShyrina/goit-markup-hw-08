@@ -6,16 +6,18 @@
   padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
 
-
-  &__desktop-menu {
-      display: none;
-
   @include for-tablet-up {
-        display: block;  
-        padding: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
       } 
-    }
-  
+    
   }
 
+  .header__desktop-menu {
+    display: none;
+
+    @include for-tablet-up {
+      display: block;
+    }
+  }
 

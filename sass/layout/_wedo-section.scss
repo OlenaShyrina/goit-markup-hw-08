@@ -1,0 +1,51 @@
+@import '../utils/breakpoints';
+
+.wedo-section {
+    display: none;
+  
+    @include for-desktop-up {
+      display: block;
+    }
+  }
+  
+  .wedo-list {
+      display: none;
+  
+      @include for-desktop-up {
+        display: flex;
+        gap: 30px;
+      }
+    }
+    
+    .wedo-card__img {
+      display: block;
+    }
+    
+    .wedo-card {
+      position: relative;
+  
+      &::before {
+        content: '';
+      
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      
+        display: inline-block;
+        width: 100%;
+        height: 70px;
+        background-color: rgba(47, 48, 58, 0.8);
+      }
+    }
+    
+    .wedo-card__label {
+      position: absolute;
+      left: 83px;
+      bottom: 27px;
+    
+      font-weight: 700;
+      line-height: 1.17;
+      color: var(--color-white);
+      text-align: center;
+      text-transform: uppercase;
+    }

@@ -3,14 +3,25 @@
 .hero {
     width: 100%;
     text-align: center;
+    padding: 118px 60px;
 
-    @media screen and (max-width: 768px) {
-      padding: 118px 60px;
+    @include for-tablet-up {
+      padding: 118px 204px;
     }
 
     @include for-desktop-up {
       padding: 200px 0;
     }
+  }
+
+  .hero-container {
+    @include for-mobile-up {
+      padding-right: 0;
+    padding-left: 0;
+    margin: 0 auto;
+    width: 360px;
+    }
+    
   }
   
   .hero-overlay {
@@ -25,6 +36,7 @@
 
     @include for-tablet-up {
       width: 100%;
+      height: 400px;
     }
 
     @include for-desktop-up {

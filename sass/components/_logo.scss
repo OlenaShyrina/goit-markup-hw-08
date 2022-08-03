@@ -8,9 +8,9 @@
     color: #000000;
     text-decoration: none;
 
-    @include for-tablet-up {
+    @include for-desktop-up {
       font-size: 26px;
-    line-height: 1.19;
+      line-height: 1.19;
     }
   }
   

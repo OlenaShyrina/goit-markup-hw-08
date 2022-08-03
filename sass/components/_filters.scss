@@ -5,12 +5,13 @@
   
   justify-content: flex-start;
 
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     gap: 8px;
 
     @include for-desktop-up {
       display: flex;
       justify-content: center;
+      margin-bottom: 40px;
     }
   }
 

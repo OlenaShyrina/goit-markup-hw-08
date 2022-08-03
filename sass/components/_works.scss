@@ -44,8 +44,13 @@
   }
   
   .work__image {
-    display: block;
+    width: 100%;
+    
+    @include for-desktop-up {
+      display: block;
   }
+    }
+    
   
   .work__title {
     margin-bottom: 4px;

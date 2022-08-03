@@ -9,11 +9,13 @@
     @include for-tablet-up {
       display: flex;
       flex-wrap: wrap;
-      mask-origin: -5px;
+      justify-content: space-between;
     }
 
     @include for-desktop-up {
        display: flex;
+       flex-wrap: nowrap;
+       justify-content: center;
        gap: 30px;
     }
     

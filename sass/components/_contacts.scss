@@ -1,25 +1,29 @@
 @import '../utils/breakpoints';
 
 .contacts-list {
+  display: none;
   margin-left: auto;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
+  padding-top: 21px;
+  padding-bottom: 21px;
+ 
+  
+ @include for-tablet-up {
+  display: block;
+ } 
 
   @include for-desktop-up {
     display: flex;
     gap: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   }
-  
+
+
   .contact__link {
-    @extend %flex-centered;
-    padding-top: 32px;
-    padding-bottom: 31px;
-  
     font-weight: 500;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: #757575;
     text-decoration: none;
@@ -32,6 +36,16 @@
     &:focus {
       color: var(--color-accent);
     }
+
+    @include for-desktop-up {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 32px;
+      padding-bottom: 31px;
+      line-height: 1.14;
+    }
+
   }
   
   .contact__icon {

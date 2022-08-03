@@ -1,11 +1,8 @@
 @import '../utils/breakpoints';
  
 .section {
-    
-  @media screen and (max-width: 768px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    }
+  padding-top: 60px;
+  padding-bottom: 60px;
     
   @include for-desktop-up {
     padding-top: 94px;

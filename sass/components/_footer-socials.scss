@@ -1,8 +1,6 @@
 @import '../utils/breakpoints';
 
 .footer__socials {
-   
-
  @include for-desktop-up {
   margin-left: 70px;
  }

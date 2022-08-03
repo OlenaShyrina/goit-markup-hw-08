@@ -1,23 +1,18 @@
 @import '../utils/breakpoints';
 
 .footer {
-
     padding-top: 60px;
     padding-bottom: 60px;
     line-height: 1.71;
     background-color: #2f303a;
-
   }
   
   .footer-container {
+
+    @include for-tablet-up {
       // display: flex;
       // flex-wrap: wrap;
-      // gap: 60px;
-      // justify-content: center;
-      // align-items: center;
-
-    @include for-mobile-up {
-      gap: 30px;   
+      // justify-content: space-evenly;
     }
 
     @include for-desktop-up {
@@ -82,8 +77,4 @@
   @include for-desktop-up {
     text-align: left;
   }
- }
-
- .subscr-form {
-  text-align: center;
  }

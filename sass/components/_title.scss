@@ -1,15 +1,13 @@
 @import '../utils/breakpoints';
 
 .section__title {
+  margin-bottom: 30px;
+
     font-size: 28px;
     line-height: 1.18;
     
     color: var(--color-primary);
     text-align: center;
-
-    @media screen and (max-width: 768px) {
-      margin-bottom: 30px;
-      }
 
       @include for-desktop-up {
         margin-bottom: 50px;
