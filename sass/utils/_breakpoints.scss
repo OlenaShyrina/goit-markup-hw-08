@@ -20,3 +20,19 @@
         @content;
     }
 }
+
+@mixin for-pixel-device-ratio2 {
+    @media (min-device-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+        @content;
+    }
+}
+
+@mixin for-pixel-device-ratio3 {
+    @media (min-device-ratio: 3),
+    (min-resolution: 3dppx),
+    (min-resolution: 288dpi) {
+        @content;
+    }
+}
