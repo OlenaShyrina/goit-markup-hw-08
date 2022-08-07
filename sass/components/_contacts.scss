@@ -19,6 +19,18 @@
   }
   }
 
+  .contacts-list__item {
+    margin-bottom: 10px;
+
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include for-desktop-up {
+      margin-bottom: 0;
+    }
+  }
 
   .contact__link {
     font-weight: 500;

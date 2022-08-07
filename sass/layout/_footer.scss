@@ -10,9 +10,9 @@
   .footer-container {
 
     @include for-tablet-up {
-      // display: flex;
-      // flex-wrap: wrap;
-      // justify-content: space-evenly;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
     }
 
     @include for-desktop-up {

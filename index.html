@@ -39,24 +39,20 @@
         </nav>
         <ul class="contacts-list">
           <li class="contacts-list__item">
-            <div class="contact">
               <a class="contact__link" href="mailto:info@devstudio.com">
                 <svg class="contact__icon" width="16" height="12">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com
               </a>
-            </div>
           </li>
           <li class="contacts-list__item">
-            <div class="contact">
               <a class="contact__link" href="tel:+380991111111">
                 <svg class="contact__icon" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 +38 099 111 11 11
               </a>
-            </div>
           </li>
         </ul>
 
@@ -95,10 +91,15 @@
               <li class="mobile-menu__mail">info@devstudio.com</li>
             </ul>
             <ul class="mobile-menu__socials">
-              <li class="mobile-menu__social">Instagram</li>
-              <li class="mobile-menu__social">Twitter</li>
-              <li class="mobile-menu__social">Facebook</li>
-              <li class="mobile-menu__social">LinkedIn</li>
+              <li class="mobile-social">
+                <a class="mobile-social__link" href="">Instagram</a>
+              </li>
+              <li class="mobile-social">
+                <a class="mobile-social__link" href="">Twitter</a></li>
+              <li class="mobile-social">
+                <a class="mobile-social__link" href="">Facebook</a></li>
+              <li class="mobile-social">
+                <a class="mobile-social__link" href="">LinkedIn</a></li>
             </ul>
        </div>
       
@@ -182,37 +183,49 @@
           <ul class="wedo-list">
             <li class="wedo-list__item">
               <div class="wedo-card">
+                <picture>
+                  <source srcset="./images/desktop.webp 1x, ./images/desktop@2x.webp 2x, ./images/desktop@3x.webp 3x" 
+                type="image/webp">
+                <source srcset="./images/desktop@2x.jpg 2x, ./images/desktop@3x.jpg 3x" type="image/jpg">
                 <img class="wedo-card__img" 
-                srcset="./images/desktop@2x.jpg 2x,
-                ./images/desktop@3x.jpg 3x,
-                ./images/desktop.webp 1x,
-                ./images/desktop@2x.webp 2x,
-                ./images/desktop@3x.webp 3x,"
-                src="./imagesdesktop.jpg" alt="Десктопные приложения" width="370" height="294" />
+                src="./images/desktop.jpg" 
+                alt="Десктопные приложения" 
+                width="370" 
+                height="294" />
+                </picture>
+                
                 <p class="wedo-card__label">Десктопные приложения</p>
               </div>
             </li>
             <li class="wedo-list__item">
               <div class="wedo-card">
-                <img class="wedo-card__img"
-                srcset="./images/mobile@2x.jpg 2x,
-                ./images/mobile@3x.jpg 3x,
-                ./images/mobile.webp 1x,
-                ./images/mobile@2x.webp 2x,
-                ./images/mobile@3x.webp 3x,"
-                 src="./images/mobile.jpg" alt="Мобильные приложения" width="370" height="294" />
+                <picture>
+                  <source srcset="./images/mobile.webp 1x, ./images/mobile@2x.webp 2x, ./images/mobile@3x.webp 3x" 
+                  type="image/webp">
+                  <source srcset="./images/mobile@2x.jpg 2x, ./images/mobile@3x.jpg 3x" type="image/jpg">
+                  <img class="wedo-card__img"
+                 src="./images/mobile.jpg" 
+                 alt="Мобильные приложения" 
+                 width="370" 
+                 height="294" />
+                </picture>
+                
                 <p class="wedo-card__label">Мобильные приложения</p>
               </div>
             </li>
             <li class="wedo-list__item">
               <div class="wedo-card">
-                <img class="wedo-card__img" 
-                srcset="./images/design@2x.jpg 2x,
-                ./images/design@3x.jpg 3x,
-                ./images/design.webp 1x,
-                ./images/design@2x.webp 2x,
-                ./images/design@3x.webp 3x,"
-                src="./images/design.jpg" alt="Дизайнерские решения" width="370" height="294" />
+                <picture>
+                  <source srcset="./images/design.webp 1x, ./images/design@2x.webp 2x, ./images/design@3x.webp 3x" 
+                  type="image/webp">
+                  <source srcset="./images/design@2x.jpg 2x, ./images/design@3x.jpg 3x" type="image/jpg">
+                   <img class="wedo-card__img"
+                src="./images/design.jpg" 
+                alt="Дизайнерские решения" 
+                width="370" 
+                height="294" />
+                </picture>
+               
                 <p class="wedo-card__label">Дизайнерские решения</p>
               </div>
             </li>

@@ -3,8 +3,8 @@
 .header__mobile-menu {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
     position: fixed;
+
     right: 0;
     top: 0;
     z-index: 3;
@@ -16,6 +16,10 @@
     @include for-tablet-up {
         display: none;
     }
+}
+
+.mobile-menu__nav {
+  margin-bottom: auto;
 }
 
 .mobile-menu__link {
@@ -34,6 +38,10 @@
     color: var(--color-accent);
   } 
 
+.mobile-menu__contacts {
+  margin-bottom: 64px;
+}
+
 .mobile-menu__tel {
   margin-bottom: 32px;
   font-weight: 500;
@@ -45,7 +53,6 @@
 }
 
 .mobile-menu__mail {
-  margin-bottom: 64px;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
@@ -55,14 +62,17 @@
 
 .mobile-menu__socials {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
 
 }
 
-.mobile-menu__social {
+.mobile-social__link {
+  padding-right: 10px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--color-accent);
+  border-right: 1px solid var(--color-accent);
 }

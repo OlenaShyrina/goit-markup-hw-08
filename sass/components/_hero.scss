@@ -2,7 +2,7 @@
 $hero-image-gradient: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 
 .hero {
-    padding: 118px 60px;
+    padding: 118px 0;
    
     background-repeat: no-repeat;
     background-position: center;
@@ -12,16 +12,15 @@ $hero-image-gradient: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 
     url(../images/hero.jpg);
 
     @include for-tablet-up {
-      padding: 118px 204px;
       background-image: $hero-image-gradient,
       url(../images/hero.jpg);
 
-      @include for-pixel-device-ratio2 {
+      @include for-pixel-device-ratio-2 {
         background-image: $hero-image-gradient,
         url(../images/hero@2x.jpg);
       }
 
-      @include for-pixel-device-ratio3 {
+      @include for-pixel-device-ratio-3 {
         background-image: $hero-image-gradient,
         url(../images/hero@3x.jpg);
       }
@@ -35,12 +34,12 @@ $hero-image-gradient: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 
       
     }   
 
-    @include for-pixel-device-ratio2 {
+    @include for-pixel-device-ratio-2 {
       background-image: $hero-image-gradient,
       url(../images/hero@2x.jpg);
     }
 
-    @include for-pixel-device-ratio3 {
+    @include for-pixel-device-ratio-3 {
       background-image: $hero-image-gradient,
       url(../images/hero@3x.jpg);
     }
