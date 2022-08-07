@@ -27,10 +27,10 @@
     letter-spacing: 0.06em;
     color: var(--color-white);
     text-align: center;
-    text-transform: uppercase;
+    text-transform: uppercase; 
 
     @include for-desktop-up {
-      width: 696px;
+      max-width: 696px;
       font-size: 44px;
       line-height: 1.36;
   
